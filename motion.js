@@ -13,7 +13,7 @@ exports.acceleration= function(v,t){
   return v/t;
 }
 exports.distancefinal= function(a,t){
-  return 1/2*a*t*t
+  return (1/2)*a*t*t
 }
 exports.velocityfinal= function(v,a,t){
   return v+a*t
