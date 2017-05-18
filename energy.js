@@ -6,6 +6,6 @@ exports.kineticEnergy = function(m,v){
 exports.velocity = function(ke,m){
   return Math.squareroot(2*ke)/m
 }
-exports.mass = function(){
+exports.mass = function(ke,v){
   return (2*ke)/(v*v)
 }
