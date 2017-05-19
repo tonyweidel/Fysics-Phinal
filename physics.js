@@ -19,27 +19,41 @@ terminal.question("What type of equation are you looking for?(motion,energy)",fu
       if(str=="d"){
         printOptions()
         terminal.question("",function(list){
-          if(Number.isNaN()){}
-          else{}
+          if(Number.isNaN(a[2])=true){
+            console.log(motion.distance(a[1],a[3]));
+          }
+          else{
+            console.log(motion.distancefinal(a[2],a[3]));
+          }
         }
       }
       else if(str=="v"){
-        terminal.question("What are your 6 numbers?",function(d,t){
-
+        printOptions()
+        terminal.question("",function(list){
+          if(Number.isNaN(a[2])=true){
+            console.log(motion.velocity(a[0],a[3]));
+          }
+          else{
+            console.log(motion.velocityfinal(a[1],a[2],a[3]));
+          }
         }
       }
       else if (str=="a"){
-        terminal.question("What are your 6 numbers?",function(v,t){
-
-        }
+        console.log(motion.acceleration(a[1],a[3]));
       }
       else if(str=="t"){
-        terminal.question("What are your 6 numbers?",function(d,v){
-
+        printOptions()
+        terminal.question("",function(list){
+          if(Number.isNaN(a[2])=true){
+            console.log(motion.time(a[0],a[3]));
+          }
+          else{
+            console.log(motion.timefinal(a[1],a[1],a[2]));
+          }
         }
       }
       else{
-
+        console.log("That isn't one of the options")
       }
     }
   });
@@ -47,17 +61,20 @@ terminal.question("What type of equation are you looking for?(motion,energy)",fu
     terminal.question("Which variable are you solving for?(ke,m,v)",function(str){
       str.toLowerCase(str);
       if(str=="ke"){
-        terminal.question("What are your 6 numbers?",function(m,v){
+        printOptions()
+        terminal.question("",function(list){
 
         }
       }
       else if(str=="m"){
-        terminal.question("What are your 6 numbers?",function(ke,m){
+        printOptions()
+        terminal.question("",function(list){
 
         }
       }
       else if(str=="v"){
-        terminal.question("What are your 6 numbers?",function(ke,v){
+        printOptions()
+        terminal.question("",function(list){
 
         }
       }
